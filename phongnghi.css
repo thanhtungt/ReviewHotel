@@ -1,0 +1,107 @@
+.rooms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.room {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+.room img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.room-details {
+  flex: 1;
+  padding: 20px;
+}
+.room-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.room-details p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.room-details .icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.room-details .icons i {
+  font-size: 20px;
+  color: #666;
+}
+.room-details .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.room-details .buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.room-details .buttons .book-now {
+  background-color: #d4c29a;
+  color: #fff;
+}
+.room-details .buttons .details {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* banner carousel */
+/* carousel phòng nghỉ */
+.carouselpn {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Đảm bảo width phù hợp với ảnh */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carouselpn-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng chuyển động mượt mà */
+}
+
+.carouselpn-images img {
+  width: 400px; /* Đặt width cố định cho ảnh */
+  height: 390px; /* Đặt height cố định cho ảnh */
+  object-fit: cover; /* Đảm bảo ảnh vừa vặn mà không bị méo */
+}
+
+/* Nút Next và Prev */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 1;
+}
+
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
