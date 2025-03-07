@@ -93,7 +93,6 @@ button {
   z-index: 1;
 }
 
-
 button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -105,3 +104,5 @@ button:hover {
 .next {
   right: 10px;
 }
+
+
